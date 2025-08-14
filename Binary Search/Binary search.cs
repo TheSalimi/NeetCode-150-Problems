@@ -30,9 +30,10 @@ public class Solution
         while (left <= right)
         {
             int mid = left + (right-left) / 2;
+            int midValue = nums[mid];
 
-            if (nums[mid] == target) return mid;
-            else if (nums[mid] < target)
+            if (midValue == target) return mid;
+            else if (midValue < target)
             {
                 left = mid + 1;
             }
